@@ -6,12 +6,13 @@ import { notFound } from "next/navigation";
 const seedProducts = initialData.products;
 
 interface Props {
-  params: {
+  params: Promise<{
     id: Category;
-  };
+  }>;
 }
 
-export default function ({ params }: Props) {
+export default async function(props: Props) {
+  const params = await props.params;
   const { id } = params;
 
   const products = seedProducts.filter((product) => product.gender === id);
