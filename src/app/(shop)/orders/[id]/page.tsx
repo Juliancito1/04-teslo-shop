@@ -17,7 +17,7 @@ interface Props {
   }>;
 }
 
-export default async function(props: Props) {
+export default async function OrdersByIdPage(props: Props) {
   const params = await props.params;
   const { id } = params;
 
