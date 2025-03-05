@@ -14,7 +14,7 @@ interface Props {
   }>;
 }
 
-export default async function (props: Props) {
+export default async function ProductBySlugPage(props: Props) {
   const params = await props.params;
   const { slug } = params;
 
