@@ -55,7 +55,7 @@ export const Pagination = ({ totalPages }: Props) => {
               <IoChevronBackOutline size={30} />
             </Link>
           </li>
-          {allPages.map((page, index) => (
+          {allPages.map((page) => (
             <li key={page} className="page-item">
               <Link
                 className={clsx(

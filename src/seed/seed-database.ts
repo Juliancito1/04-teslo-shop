@@ -32,7 +32,7 @@ async function main() {
 
   console.log(categoriesMap);
 
-  const { images, type, ...product1 } = products[0];
+  // const { images, type, ...product1 } = products[0];
 
   // await prisma.product.create({
   //   data: {
